@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+ul.square {
+list-style-type:square;
+}	
+	
+.glyphpad {
+	margin-right: 8px;
+	margin-left: 8px;
+}
+
+center { margin-right: auto; margin-left: auto; }
+
+kaltura {background-color: #bdc3c7; }
