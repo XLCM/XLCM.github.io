@@ -1,6 +1,10 @@
-#test {
-  margin-top: 50px;
+body {
+  background-image: url("../_img/qbkls.png");
+  background-repeat: repeat;
 }
-.black {
-  background-color: black;
+
+p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.15rem;
+  color: rgba(0, 0, 0, 0.87);
 }
