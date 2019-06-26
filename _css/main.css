@@ -3,8 +3,22 @@ body {
   background-repeat: repeat;
 }
 
-p {
+p, a, li {
   font-family: 'Roboto Slab', serif;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   color: rgba(0, 0, 0, 0.87);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', serif;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+iframe {
+  display:block;
+  margin-right: auto;
+  margin-left: auto;
 }
