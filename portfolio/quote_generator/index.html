@@ -1,32 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Title -->
-  <title>Home | Phil Curran</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>V8 Toucans!</title>
   <!-- css -->
-  <link href="main.css" rel="stylesheet">
-  <link href="semantic.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-  <div id="derp" style="background: rgba(255, 0, 0, 0.3);">
-    <div class="ui container">
-      <div class="ui raised piled segment" id="test">
-        <p>quote generator</p>
-        <button class="ui red button" onclick="rgbCode()">
-          Change the color
-        </button>
-      </div>
-    </div>
-
+  <div id="colorChanger">
+    <main>
+      <section>
+        <blockquote>
+          <p id="quote"></p>
+          <cite id="author"></cite>
+        </blockquote>
+      </section>
+      <section>
+        <button id="tweet" type="button"><i class="fab fa-twitter-square"></i> Tweet It!</button>
+        <button id="quoteButton" type="button"><i class="fas fa-sync"></i> Get Another Quote!</button>
+      </section>
+    </main>
+    <footer>Made by Toucans Team 06</footer>
   </div>
 
   <!-- js -->
-  <script src="main.js"></script>
+  <script src=" ./js/main.js" charset="utf-8"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
 </body>
 
 </html>
