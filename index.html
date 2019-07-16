@@ -18,7 +18,9 @@
       background-repeat: repeat;
       background-attachment: fixed;
     }
-
+    html {
+      scroll-behavior: smooth;
+    }
     .ui.menu .item img.logo {
       margin-right: 1.5em;
     }
@@ -48,15 +50,25 @@
         Phil Curran
       </a>
       <a href="#" class="item">About</a>
-      <a href="#" class="item">Recent Projects</a>
-      <a href="#" class="item">Web Design</a>
+      <div class="ui simple dropdown item">
+          Recent Projects <i class="dropdown icon"></i>
+          <div class="menu">
+            <a class="item" href="#foster">@ University of Washington</a>
+            <a class="item" href="#storyline">Storyline Projects</a>
+            <a class="item" href="#automation">Build Automation</a>
+            <a class="item" href="#projMgmt">Project Management</a>
+            <a class="item" href="#hrp">@ HRP Project</a>
+            <a class="item" href="#uwmad">@ University of Wisconsin</a>
+            <a class="item" href="#webDesignProjects">Web Design Projects</a>
+          </div>
+        </div>
     </div>
   </div>
 
   <div style="width: 960px;" class="ui container">
     <div style="margin-top: 25px; margin-bottom: 50px; padding: 50px;">
 
-      <div>
+      <div style="margin-bottom: 25px;">
         <h2>About Me</h2>
         <div class="padded">
           <div class="ui two column grid">
@@ -69,34 +81,32 @@
                 Design Project. I'm currently deepening my experience through NuCamp, a full-stack web developer
                 bootcamp in Seattle, where I'm learning React, React Native, MongoDB, Express, NodeJS, and all of the
                 build tools & workflows needed for modern web application development.</p>
-              <p><a href="./portfolio/quote_generator/index.html" target="_blank">Quote Generator</a></p>
             </div>
 
             <div class="five wide column">
-              <div>
-                <img class="ui medium circular image" src="./img/photo.jpg">
-              </div>
               <div class="ui center aligned grid">
+                <div>
+                  <img style="width: 150px; height: 150px; margin: 15px;" class="ui medium rounded image" src="./img/phil.jpg">
+                </div>
                 <div class="content">
-                  <a class="header">Phil Curran, M.S.</a>
+                  <p class="header"><strong>Phil Curran, M.S.</strong></p>
                   <div class="description">
-                    <p><a href="#">pecurran@uw.edu</a> : <i class="envelope icon"></i></p>
-                    <p>(414) - 526 - 7773 : <i class="phone icon"></i></p>
-                    <p>LinkedIn : <i class="linkedin in icon"></i></p>
-                    <p>Github : <i class="github square icon"></i></p>
-                    <p>Resume : <i class="file pdf outline icon"></i></p>
+                    <p><i class="envelope icon"></i> <a href="#">pecurran@uw.edu</a></p>
+                    <p><i class="phone icon"></i> (414) - 526 - 7773</p>
+                    <p><a href="https://www.linkedin.com/in/philcurran/" target="_blank"><i class="linkify icon"></i> LinkedIn</a </p>
+                    <p><a href="https://github.com/XLCM" target="_blank"><i class="linkify icon"></i> GitHub</a></p>
+                    <p><a href="./portfolio/Resume-PhilCurran.pdf" target="_blank"><i class="linkify icon"></i> Resume</a></p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
 
       <hr>
 
-      <div>
+      <div id="foster">
         <h2>Course Design @ The University of Washington - Foster School of Business</h2>
         <div class="padded">
           <p>I served as the lead instructional designer for both of these courses, which represent the typical
@@ -139,8 +149,8 @@
 
       <hr>
 
-      <h2>Storyline Development</h2>
-      <div>
+      <div id="storyline">
+          <h2>Storyline Development</h2>
         <div class="padded">
           <p><strong><a href="./portfolio/storyline/story_html5.html" target="_blank"><i class="linkify icon"></i>
                 Inkscape Tutorial</a></strong></p>
@@ -172,7 +182,7 @@
 
       <hr>
 
-      <div>
+      <div id="automation">
         <h2>Course Build Automation</h2>
         <div class="padded">
           <p>After developing the style guide for all of the courses in our program, I wanted to automate the
@@ -198,7 +208,7 @@
 
       <hr>
 
-      <div>
+      <div id="projMgmt">
         <h2>Processes & Tools</h2>
         <div class="padded">
           <p>Here are a variety of tools and guides I developed for project management.</p>
@@ -250,7 +260,7 @@
 
         <hr>
 
-        <div>
+        <div id="hrp">
           <h2>Human Resources Modernization Project: Online Tutorial</h2>
           <div class="padded">
             <p>I developed this prototype of an online training resource for this project, which was originally
@@ -266,7 +276,7 @@
 
         <hr>
 
-        <div>
+        <div id="uwmad">
           <h2>Course Design @ UW-Madison</h2>
           <div class="padded">
             <p>I was excited to be a part of UW Madison's first foray into the MOOC space with a series of MOOCs we
@@ -288,9 +298,8 @@
 
         <hr>
 
-        <div>
+        <div id="webDesignProjects">
           <h2>Web Design Projects</h2>
-
           <div class="padded">
             <p><a href="./portfolio/quote_generator/index.html" target="_blank"><i class="linkify icon"></i> <strong>Quote Generator for Chingu</strong></a>
             </p>
@@ -298,10 +307,8 @@
               <p>I completed this project for <a href="https://chingu.io/#" target="_blank">Chingu</a>, a volunteer program for aspiring web developers through <a href="https://medium.com/#" target="_blank">Medium.com</a></p>
               <p>I worked with several other designers across the country to develop this random quote generator, to complete requirements for the <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp.org</a> full-stack web developer program.</p>
               <p>I wrote all of the javascript for this project; the refresh button calls an API for a new quote, changes the transparent color overlay in the background, and chooses a new background pattern.</p>
-
             </div>
           </div>
-
         </div>
 
         <hr>
@@ -311,47 +318,6 @@
 
     <div class="ui inverted vertical footer segment">
       <div class="ui center aligned container">
-        <div class="ui stackable inverted divided grid">
-          <div class="three wide column">
-            <h4 class="ui inverted header">Group 1</h4>
-            <div class="ui inverted link list">
-              <a href="#" class="item">Link One</a>
-              <a href="#" class="item">Link Two</a>
-              <a href="#" class="item">Link Three</a>
-              <a href="#" class="item">Link Four</a>
-            </div>
-          </div>
-          <div class="three wide column">
-            <h4 class="ui inverted header">Group 2</h4>
-            <div class="ui inverted link list">
-              <a href="#" class="item">Link One</a>
-              <a href="#" class="item">Link Two</a>
-              <a href="#" class="item">Link Three</a>
-              <a href="#" class="item">Link Four</a>
-            </div>
-          </div>
-          <div class="three wide column">
-            <h4 class="ui inverted header">Group 3</h4>
-            <div class="ui inverted link list">
-              <a href="#" class="item">Link One</a>
-              <a href="#" class="item">Link Two</a>
-              <a href="#" class="item">Link Three</a>
-              <a href="#" class="item">Link Four</a>
-            </div>
-          </div>
-          <div class="seven wide column">
-            <h4 class="ui inverted header">Footer Header</h4>
-            <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
-          </div>
-        </div>
-        <div class="ui inverted section divider"></div>
-        <img src="assets/images/logo.png" class="ui centered mini image">
-        <div class="ui horizontal inverted small divided link list">
-          <a class="item" href="#">Site Map</a>
-          <a class="item" href="#">Contact Us</a>
-          <a class="item" href="#">Terms and Conditions</a>
-          <a class="item" href="#">Privacy Policy</a>
-        </div>
       </div>
     </div>
 </body>
