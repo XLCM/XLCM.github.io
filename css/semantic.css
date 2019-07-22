@@ -135,7 +135,7 @@ hr {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
   /* 1 */
-  height: 0;
+  height: 1;
   /* 1 */
   overflow: visible;
   /* 2 */
@@ -571,7 +571,7 @@ body {
   min-width: 320px;
   background: #FFFFFF;
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4285em;
   color: rgba(0, 0, 0, 0.87);
   font-smoothing: antialiased;
