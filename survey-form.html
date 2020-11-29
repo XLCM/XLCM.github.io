@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- css -->
+  <link rel="stylesheet" href="./fcc.css"">
+  <title>FCC Survey</title>
+</head>
+
+<body>
+
+  <div class=" container">
+
+  <h1 id='title' class='text-center'>FCC Survey</h1>
+
+  <p id='description'>This is a project for Free Code Camp!</p>
+  <p>Fill out this survey to learn more.</p>
+
+  <div class="outline">
+    <form id='survey-form'>
+      <div class="row">
+        <div class="six columns">
+          <label id='name-label' for="name">Name:</label>
+          <input id="name" class="full-width" type="text" placeholder="Your Name" required>
+        </div>
+        <div class="six columns">
+          <label id='email-label' for="email">Email:</label>
+          <input id="email" class="full-width" type="email" placeholder="Your Email" required>
+        </div>
+      </div>
+      <div class="row">
+        <div class="six columns">
+          <label id='number-label' for="number">Number:</label>
+          <input id="number" class="full-width" type="number" placeholder="A Number" min="1" max="100" required>
+        </div>
+        <div class="six columns">
+          <label id='name-label' for="dropdown">Reason for contacting:</label>
+          <select class="full-width" id="dropdown" required>
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 3</option>
+            <option value="Option 4">Option 4</option>
+            <option value="Option 5">Option 5</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="six columns">
+          <label id='gender-label' for="radio">Your gender:</label>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male"> Male</label><br>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female"> Female</label><br>
+          <input type="radio" id="other" name="gender" value="other">
+          <label for="other"> Other</label>
+        </div>
+        <div class="six columns">
+          <label id='preference-label' for="checkbox">Choose all that apply:</label>
+          <input type="checkbox" name='optionA' value='A'>
+          <label for="optionA"> Option A</label><br>
+          <input type="checkbox" name='optionB' value='B'>
+          <label for="optionB"> Option B</label><br>
+          <input type="checkbox" name='optionC' value='C'>
+          <label for="optionC"> Option C</label><br>
+          <input type="checkbox" name='optionD' value='D'>
+          <label for="optionD"> Option D</label>
+        </div>
+      </div>
+      <div class="row">
+        <label for="exampleMessage">Message</label>
+        <textarea class="full-width" placeholder="Say something nice..." id="exampleMessage"></textarea>
+      </div>
+      <div class="row">
+        <input class="button button-primary pull-right" type="submit" id='submit' value="Submit" />
+      </div>
+    </form>
+
+  </div>
+
+  </div>
+
+  <!-- js -->
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script>
+    console.log('script loaded');
+    let nameField = document.getElementById('name');
+    let emailField = document.getElementById('email');
+    let numberField = document.getElementById('number');
+  </script>
+  </body>
+
+</html>
