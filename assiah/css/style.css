@@ -1,0 +1,342 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+/* root colors */
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --gold: #fedd00;
+  --citrine: #dedb2c;
+  --azure: #1f58a4;
+  --yellowBrown: rgb(173, 136, 9);
+  --olive: rgb(141, 136, 0);
+  --amber: #ffca1a;
+  --red: rgb(237, 28, 36);
+  --gray: rgb(191, 191, 191);
+  --pink: #FDC3C6;
+}
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent
+}
+
+body {
+  line-height: 1
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none
+}
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+.button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  z-index: 9999;
+  margin: 25px;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  background: var(--white);
+  color: black;
+  text-decoration: none;
+}
+
+.topleft {
+  position: absolute;
+}
+
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+/* ---- particles.js container ---- */
+
+.sephira {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+#malkuth {
+  background: conic-gradient(black 0deg 5deg,
+      var(--amber) 6deg 11deg,
+      black 12deg 17deg,
+      var(--amber) 18deg 23deg,
+      black 24deg 29deg,
+      var(--amber) 30deg 35deg,
+      black 36deg 41deg,
+      var(--amber) 42deg 47deg,
+      black 48deg 53deg,
+      var(--amber) 54deg 59deg,
+      black 60deg 65deg,
+      var(--amber) 66deg 71deg,
+      black 72deg 77deg,
+      var(--amber) 78deg 83deg,
+      black 84deg 89deg,
+      var(--amber) 90deg 95deg,
+      black 96deg 101deg,
+      var(--amber) 102deg 107deg,
+      black 108deg 113deg,
+      var(--amber) 114deg 119deg,
+      black 120deg 125deg,
+      var(--amber) 126deg 131deg,
+      black 132deg 137deg,
+      var(--amber) 138deg 143deg,
+      black 144deg 149deg,
+      var(--amber) 150deg 155deg,
+      black 156deg 161deg,
+      var(--amber) 162deg 167deg,
+      black 168deg 173deg,
+      var(--amber) 174deg 179deg,
+      black 180deg 185deg,
+      var(--amber) 186deg 191deg,
+      black 192deg 197deg,
+      var(--amber) 198deg 203deg,
+      black 204deg 209deg,
+      var(--amber) 210deg 215deg,
+      black 216deg 221deg,
+      var(--amber) 222deg 227deg,
+      black 228deg 233deg,
+      var(--amber) 234deg 239deg,
+      black 240deg 245deg,
+      var(--amber) 246deg 251deg,
+      black 252deg 257deg,
+      var(--amber) 258deg 263deg,
+      black 264deg 269deg,
+      var(--amber) 270deg 275deg,
+      black 276deg 281deg,
+      var(--amber) 282deg 287deg,
+      black 288deg 293deg,
+      var(--amber) 294deg 299deg,
+      black 300deg 305deg,
+      var(--amber) 306deg 311deg,
+      black 312deg 317deg,
+      var(--amber) 318deg 323deg,
+      black 324deg 329deg,
+      var(--amber) 330deg 335deg,
+      black 336deg 341deg,
+      var(--amber) 342deg 347deg,
+      black 348deg 353deg,
+      var(--amber) 354deg);
+}
+
+#yesod {
+  background-color: var(--citrine);
+  background-image: url('../img/9p.svg');
+}
+
+#hod {
+  background-color: var(--yellowBrown);
+  background-image: url('');
+}
+
+#netzach {
+  background-color: var(--olive);
+  background-image: url('');
+}
+
+#tiphareth {
+  background-color: var(--amber);
+  background-image: url('');
+}
+
+#tiphareth {
+  background-color: var(--amber);
+  background-image: url('');
+}
+
+#gevurah {
+  background-color: var(--red);
+  background-image: url('');
+}
+
+#chesed {
+  background-color: var(--azure);
+  background-image: url('');
+}
+
+#binah {
+  background-color: var(--gray);
+  background-image: url('');
+}
+
+#chokmah2 {
+  background-color: var(--white);
+  background-image: url('');
+}
+
+#chokmah1 {
+  position: absolute;
+}
+
+#kether {
+  background: conic-gradient(white 0deg 5deg,
+      var(--amber) 6deg 11deg,
+      white 12deg 17deg,
+      var(--amber) 18deg 23deg,
+      white 24deg 29deg,
+      var(--amber) 30deg 35deg,
+      white 36deg 41deg,
+      var(--amber) 42deg 47deg,
+      white 48deg 53deg,
+      var(--amber) 54deg 59deg,
+      white 60deg 65deg,
+      var(--amber) 66deg 71deg,
+      white 72deg 77deg,
+      var(--amber) 78deg 83deg,
+      white 84deg 89deg,
+      var(--amber) 90deg 95deg,
+      white 96deg 101deg,
+      var(--amber) 102deg 107deg,
+      white 108deg 113deg,
+      var(--amber) 114deg 119deg,
+      white 120deg 125deg,
+      var(--amber) 126deg 131deg,
+      white 132deg 137deg,
+      var(--amber) 138deg 143deg,
+      white 144deg 149deg,
+      var(--amber) 150deg 155deg,
+      white 156deg 161deg,
+      var(--amber) 162deg 167deg,
+      white 168deg 173deg,
+      var(--amber) 174deg 179deg,
+      white 180deg 185deg,
+      var(--amber) 186deg 191deg,
+      white 192deg 197deg,
+      var(--amber) 198deg 203deg,
+      white 204deg 209deg,
+      var(--amber) 210deg 215deg,
+      white 216deg 221deg,
+      var(--amber) 222deg 227deg,
+      white 228deg 233deg,
+      var(--amber) 234deg 239deg,
+      white 240deg 245deg,
+      var(--amber) 246deg 251deg,
+      white 252deg 257deg,
+      var(--amber) 258deg 263deg,
+      white 264deg 269deg,
+      var(--amber) 270deg 275deg,
+      white 276deg 281deg,
+      var(--amber) 282deg 287deg,
+      white 288deg 293deg,
+      var(--amber) 294deg 299deg,
+      white 300deg 305deg,
+      var(--amber) 306deg 311deg,
+      white 312deg 317deg,
+      var(--amber) 318deg 323deg,
+      white 324deg 329deg,
+      var(--amber) 330deg 335deg,
+      white 336deg 341deg,
+      var(--amber) 342deg 347deg,
+      white 348deg 353deg,
+      var(--amber) 354deg);
+}
