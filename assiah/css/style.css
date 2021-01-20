@@ -123,7 +123,6 @@ body {
 
 canvas {
   display: block;
-  vertical-align: bottom;
 }
 
 .button {
@@ -231,47 +230,38 @@ canvas {
 
 #yesod {
   background-color: var(--citrine);
-  background-image: url('../img/9p.svg');
 }
 
 #hod {
   background-color: var(--yellowBrown);
-  background-image: url('');
 }
 
 #netzach {
   background-color: var(--olive);
-  background-image: url('');
 }
 
 #tiphareth {
   background-color: var(--amber);
-  background-image: url('');
 }
 
 #tiphareth {
   background-color: var(--amber);
-  background-image: url('');
 }
 
 #gevurah {
   background-color: var(--red);
-  background-image: url('');
 }
 
 #chesed {
   background-color: var(--azure);
-  background-image: url('');
 }
 
 #binah {
   background-color: var(--gray);
-  background-image: url('');
 }
 
 #chokmah2 {
   background-color: var(--white);
-  background-image: url('');
 }
 
 #chokmah1 {
