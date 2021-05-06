@@ -260,12 +260,19 @@ canvas {
   background-color: var(--gray);
 }
 
-#chokmah2 {
-  background-color: var(--white);
-}
-
 #chokmah1 {
   position: absolute;
+  z-index: 1;
+}
+
+#chokmah2 {
+  position: absolute;
+  z-index: -1;
+}
+
+#chokmah3 {
+  position: absolute;
+  z-index: -2;
 }
 
 #kether {
