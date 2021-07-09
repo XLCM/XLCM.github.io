@@ -163,9 +163,15 @@ canvas {
   background-size: contain;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 #malkuth {
+  width: 3000px;
+  height: 3000px;
+  overflow: hidden;
+  top: -1000px;
+  left: -500px;
   background: conic-gradient(black 0deg 5deg,
       var(--amber) 6deg 11deg,
       black 12deg 17deg,
@@ -276,6 +282,11 @@ canvas {
 }
 
 #kether {
+  width: 3000px;
+  height: 3000px;
+  overflow: hidden;
+  top: -1000px;
+  left: -500px;
   background: conic-gradient(white 0deg 5deg,
       var(--amber) 6deg 11deg,
       white 12deg 17deg,

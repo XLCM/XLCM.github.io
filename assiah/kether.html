@@ -9,13 +9,40 @@
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" media="screen" href="css/style.css">
+  <style>
+    button {
+      background-color: black;
+      color: white;
+    }
+
+    /* The animation code */
+    @keyframes rotator {
+      from {
+        transform: rotate(0deg)
+      }
+
+      to {
+        transform: rotate(180deg);
+      }
+    }
+
+    /* The element to apply the animation to */
+    .sephira {
+      animation-name: rotator;
+      animation-duration: 60s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      position: fixed;
+    }
+  </style>
 </head>
 
 <body>
   <!-- particles.js container -->
-  <div class='sephira' id="kether">
+  <div>
     <a href="chokmah.html" class="button topleft">Chokmah</a>
   </div>
+  <div class='sephira' id="kether"></div>
 </body>
 
 </html>
